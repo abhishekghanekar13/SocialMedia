@@ -18,6 +18,11 @@ let CardPost = () => {
     let Reaction=ReactionElement.current.value;
     let Posttags=PosttagsElement.current.value.split(" ");
     addPost(userId,Posttitle,Postcontant,Reaction,Posttags);
+    userIdElement.current.value=" ";
+    PosttitleElement.current.value=" ";
+    PostcontantElement.current.value=" ";
+    ReactionElement.current.value=" ";
+    PosttagsElement.current.value=" ";
   }
   return (
     <>
